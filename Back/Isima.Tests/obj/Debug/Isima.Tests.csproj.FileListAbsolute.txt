@@ -1,0 +1,63 @@
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\Isima.Tests.dll.config
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\Isima.Tests.dll
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\Isima.Tests.pdb
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\Castle.Core.dll
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\EntityFramework.dll
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\EntityFramework.SqlServer.dll
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\isima.DAL.dll
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\Isima.DTO.dll
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\Moq.dll
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\isima.DAL.pdb
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\isima.DAL.dll.config
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\Isima.DTO.pdb
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\Castle.Core.xml
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\EntityFramework.xml
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\EntityFramework.SqlServer.xml
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\Moq.xml
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\obj\Debug\Isima.Tests.csprojAssemblyReference.cache
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\obj\Debug\Isima.Tests.csproj.CopyComplete
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\obj\Debug\Isima.Tests.dll
+D:\DAF\ISIMA\Src\Isima\Isima.Tests\obj\Debug\Isima.Tests.pdb
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\Isima.Tests.dll.config
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\Isima.Tests.dll
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\Isima.Tests.pdb
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\Castle.Core.dll
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\EntityFramework.dll
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\EntityFramework.SqlServer.dll
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\isima.DAL.dll
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\Isima.DTO.dll
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\Moq.dll
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\isima.DAL.pdb
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\isima.DAL.dll.config
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\Isima.DTO.pdb
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\Castle.Core.xml
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\EntityFramework.xml
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\EntityFramework.SqlServer.xml
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\Moq.xml
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\obj\Debug\Isima.Tests.csprojAssemblyReference.cache
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\obj\Debug\Isima.Tests.csproj.CoreCompileInputs.cache
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\obj\Debug\Isima.Tests.csproj.CopyComplete
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\obj\Debug\Isima.Tests.dll
+D:\Sources\ServicesWeb\TP3 - API\Isima.Tests\obj\Debug\Isima.Tests.pdb
