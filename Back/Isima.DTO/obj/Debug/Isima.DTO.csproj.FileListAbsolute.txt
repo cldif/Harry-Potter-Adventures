@@ -13,9 +13,3 @@ C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.DTO\bin\Debug\I
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.DTO\bin\Debug\Isima.DTO.pdb
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.DTO\obj\Debug\Isima.DTO.dll
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.DTO\obj\Debug\Isima.DTO.pdb
-C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.DTO\bin\Debug\Isima.DTO.dll.config
-C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.DTO\bin\Debug\EntityFramework.dll
-C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.DTO\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.DTO\bin\Debug\EntityFramework.xml
-C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.DTO\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.DTO\obj\Debug\Isima.DTO.csproj.CopyComplete

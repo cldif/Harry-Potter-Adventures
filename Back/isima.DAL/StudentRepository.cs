@@ -12,19 +12,17 @@ namespace isima.DAL
     public class StudentRepository : IDisposable
     {
 
-        private readonly IsimaEntities1 _dbcontext = null;
+        private readonly IsimaEntities _dbcontext = null;
 
         public StudentRepository() 
             {
-            _dbcontext = new IsimaEntities1();
+            _dbcontext = new IsimaEntities();
             }
 
-        public StudentRepository(IsimaEntities1 context)
+        public StudentRepository(IsimaEntities context)
         {
             _dbcontext = context;
         }
-
-
 
         public List<StudentDto> GetAllStudent()
         {

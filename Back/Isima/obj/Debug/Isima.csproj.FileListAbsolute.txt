@@ -14,11 +14,5 @@ C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima\bin\Debug\Isima
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima\bin\Debug\Isima.xml
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima\bin\Debug\Isima.exe
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima\bin\Debug\Isima.pdb
-C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima\bin\Debug\EntityFramework.dll
-C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima\bin\Debug\EntityFramework.xml
-C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima\obj\Debug\Isima.csprojAssemblyReference.cache
-C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima\obj\Debug\Isima.csproj.CopyComplete
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima\obj\Debug\Isima.exe
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima\obj\Debug\Isima.pdb

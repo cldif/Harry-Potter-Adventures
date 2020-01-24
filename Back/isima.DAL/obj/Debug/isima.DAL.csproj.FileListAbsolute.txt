@@ -25,8 +25,6 @@ D:\Sources\ServicesWeb\TP3 - API\isima.DAL\obj\Debug\isima.DAL.csproj.CoreCompil
 D:\Sources\ServicesWeb\TP3 - API\isima.DAL\obj\Debug\isima.DAL.csproj.CopyComplete
 D:\Sources\ServicesWeb\TP3 - API\isima.DAL\obj\Debug\isima.DAL.dll
 D:\Sources\ServicesWeb\TP3 - API\isima.DAL\obj\Debug\isima.DAL.pdb
-C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\isima.DAL\obj\Debug\isima.DAL.dll
-C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\isima.DAL\obj\Debug\isima.DAL.pdb
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\isima.DAL\bin\Debug\isima.DAL.dll.config
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\isima.DAL\bin\Debug\isima.DAL.dll
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\isima.DAL\bin\Debug\isima.DAL.pdb
@@ -34,8 +32,9 @@ C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\isima.DAL\bin\Debug\E
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\isima.DAL\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\isima.DAL\bin\Debug\Isima.DTO.dll
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\isima.DAL\bin\Debug\Isima.DTO.pdb
-C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\isima.DAL\bin\Debug\Isima.DTO.dll.config
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\isima.DAL\bin\Debug\EntityFramework.xml
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\isima.DAL\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\isima.DAL\obj\Debug\isima.DAL.csprojAssemblyReference.cache
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\isima.DAL\obj\Debug\isima.DAL.csproj.CopyComplete
+C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\isima.DAL\obj\Debug\isima.DAL.dll
+C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\isima.DAL\obj\Debug\isima.DAL.pdb
+C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\isima.DAL\obj\Debug\isima.DAL.csprojAssemblyReference.cache

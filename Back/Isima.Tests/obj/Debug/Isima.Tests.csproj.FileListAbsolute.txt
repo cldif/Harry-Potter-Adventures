@@ -77,7 +77,6 @@ C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.Tests\bin\Debug
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.Tests\bin\Debug\isima.DAL.pdb
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.Tests\bin\Debug\isima.DAL.dll.config
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.Tests\bin\Debug\Isima.DTO.pdb
-C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.Tests\bin\Debug\Isima.DTO.dll.config
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.Tests\bin\Debug\Castle.Core.xml
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.Tests\bin\Debug\EntityFramework.xml
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.Tests\bin\Debug\EntityFramework.SqlServer.xml
