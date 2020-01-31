@@ -4,8 +4,13 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
+<<<<<<< HEAD
       <Diagram DiagramId="589e139390654541b22fda9334110e93" Name="Diagram1">
         <EntityTypeShape EntityType="IsimaModel.Map" Width="1.5" PointX="1" PointY="1.125" />
+=======
+      <Diagram DiagramId="589e139390654541b22fda9334110e93" Name="Diagram1">
+        <EntityTypeShape EntityType="IsimaModel.Map" Width="1.5" PointX="2.75" PointY="0.875" />
+>>>>>>> 18f1f07a708427d89c7bb54d590e9c2057e653aa
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

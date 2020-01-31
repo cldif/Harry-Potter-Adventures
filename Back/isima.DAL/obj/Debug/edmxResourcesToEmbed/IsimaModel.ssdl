@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="IsimaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityContainer Name="IsimaModelStoreContainer">
@@ -10,4 +11,18 @@
     <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Configuration" Type="nvarchar" Nullable="true" MaxLength="1000" />
   </EntityType>
+=======
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IsimaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Map">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="configuration" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityContainer Name="IsimaModelStoreContainer">
+    <EntitySet Name="Map" EntityType="Self.Map" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+>>>>>>> 18f1f07a708427d89c7bb54d590e9c2057e653aa
 </Schema>

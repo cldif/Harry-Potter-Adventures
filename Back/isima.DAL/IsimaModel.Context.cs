@@ -23,7 +23,21 @@ public partial class IsimaEntities : DbContext
     public IsimaEntities()
         : base("name=IsimaEntities")
     {
+<<<<<<< HEAD
 
+=======
+        public IsimaEntities()
+            : base("name=IsimaEntities")
+        {
+        }
+    
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            throw new UnintentionalCodeFirstException();
+        }
+    
+        public virtual DbSet<Map> Map { get; set; }
+>>>>>>> 18f1f07a708427d89c7bb54d590e9c2057e653aa
     }
 
     protected override void OnModelCreating(DbModelBuilder modelBuilder)
