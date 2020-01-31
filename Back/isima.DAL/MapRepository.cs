@@ -28,10 +28,10 @@ namespace isima.DAL
         {
             try
             {
-                //Get all map data line from database 
-                List<Map> mapEntities = _dbcontext.Map.ToList();
+                //Get all Map data line from database 
+                List<Map> MapEntities = _dbcontext.Map.ToList();
                 //transform to DTO, and send to upper layer
-                return mapEntities.Select(x => new MapDto
+                return MapEntities.Select(x => new MapDto
                 {
                     Id = x.ID,
                     Configuration = x.Configuration
@@ -44,12 +44,12 @@ namespace isima.DAL
             }
         }
 
-        public MapDto AddMap(MapDto map)
+        public MapDto AddMap(MapDto Map)
         {
-            Map newMap = map.ToEntity();
-            var mapCreated = _dbcontext.Map.Add(newMap);
+            Map newMap = Map.ToEntity();
+            var MapCreated = _dbcontext.Map.Add(newMap);
             _dbcontext.SaveChanges();
-            return mapCreated.ToDto();
+            return MapCreated.ToDto();
         }
 
         public void Dispose()

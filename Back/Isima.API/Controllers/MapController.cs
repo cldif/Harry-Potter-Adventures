@@ -18,35 +18,35 @@ namespace Isima.API.Controllers
     /// <seealso cref="System.Web.Http.ApiController" />
     public class MapController : ApiController
     {
-        private readonly MapService _mapService = null;
+        private readonly MapService _MapService = null;
         /// <summary>
         /// Initializes a new instance of the <see cref="MapController"/> class.
         /// </summary>
         public MapController()
         {
-            _mapService = new MapService();
+            _MapService = new MapService();
         }
 
 
         /// <summary>
-        /// Get list of all maps 
+        /// Get list of all Maps 
         /// </summary>
         /// <remarks>
-        /// Get list of all maps from the database no filtered
+        /// Get list of all Maps from the database no filtered
         /// </remarks>
         /// <returns></returns>
-        /// <response code="200"> List of map</response>
+        /// <response code="200"> List of Map</response>
         [ResponseType(typeof(IEnumerable<MapViewModel>))]
         public IHttpActionResult Get()
         {
-            IList<MapDto> maps = _mapService.GetAllMap();
-            IEnumerable<MapViewModel> mapList = maps.Select(st => new MapViewModel
+            IList<MapDto> Maps = _MapService.GetAllMap();
+            IEnumerable<MapViewModel> MapList = Maps.Select(st => new MapViewModel
             {
                 Id = st.Id,
                 Configuration = st.Configuration
             });
 
-            return Ok(mapList);
+            return Ok(MapList);
 
         }
 
@@ -56,28 +56,28 @@ namespace Isima.API.Controllers
         //    {
         //        return BadRequest("Map Id is required");
         //    }
-        //   var map = _mapService.Gets
+        //   var Map = _MapService.Gets
         //}
 
         /// <summary>
-        /// Posts the specified map.
+        /// Posts the specified Map.
         /// </summary>
-        /// <param name="map">The map.</param>
+        /// <param name="Map">The Map.</param>
         /// <response code="200"> Created</response>
         /// <response code="400"> parameter issue</response>
         /// <response code="500">Other issues, see message included</response>
-        public IHttpActionResult Post([FromBody]MapViewModel map)
+        public IHttpActionResult Post([FromBody]MapViewModel Map)
         {
-            if(map == null)
+            if(Map == null)
             {
                 return BadRequest("Map Id is required");
             }
 
             try
             {
-                _mapService.AddMap(new MapDto
+                _MapService.AddMap(new MapDto
                 {
-                    Configuration = map.Configuration
+                    Configuration = Map.Configuration
                 });
 
                 return Ok();

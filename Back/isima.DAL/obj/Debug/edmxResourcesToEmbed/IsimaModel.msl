@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="IsimaModelStoreContainer" CdmEntityContainer="IsimaEntities">
-    <EntitySetMapping Name="Map">
-      <EntityTypeMapping TypeName="IsTypeOf(IsimaModel.Map)">
-        <MappingFragment StoreEntitySet="Map">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-          <ScalarProperty Name="Configuration" ColumnName="Configuration" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-  </EntityContainerMapping>
-=======
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="IsimaModelStoreContainer" CdmEntityContainer="IsimaEntities">
@@ -24,5 +10,4 @@
       </EntityTypeMapping>
     </EntitySetMapping>
   </EntityContainerMapping>
->>>>>>> 18f1f07a708427d89c7bb54d590e9c2057e653aa
 </Mapping>

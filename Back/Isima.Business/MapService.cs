@@ -13,24 +13,24 @@ namespace Isima.Business
 
         public IList<MapDto> GetAllMap()
         {
-            using(MapRepository _mapRepo = new MapRepository())
+            using(MapRepository _MapRepo = new MapRepository())
             {
-                return _mapRepo.GetAllMap();
+                return _MapRepo.GetAllMap();
             }
         }
 
-        public MapDto AddMap(MapDto map)
+        public MapDto AddMap(MapDto Map)
         {
-            if(map !=null)
+            if(Map !=null)
             {
-                using (MapRepository _mapRepo = new MapRepository())
+                using (MapRepository _MapRepo = new MapRepository())
                 {
-                    return _mapRepo.AddMap(map);
+                    return _MapRepo.AddMap(Map);
                 }
             }
            else
             {
-                throw new ArgumentNullException(nameof(map), "Map can't be null");
+                throw new ArgumentNullException(nameof(Map), "Map can't be null");
             }
         }
 

@@ -38,16 +38,3 @@ C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\isima.DAL\obj\Debug\i
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\isima.DAL\obj\Debug\isima.DAL.dll
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\isima.DAL\obj\Debug\isima.DAL.pdb
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\isima.DAL\obj\Debug\isima.DAL.csprojAssemblyReference.cache
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\isima.DAL\bin\Debug\isima.DAL.dll.config
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\isima.DAL\bin\Debug\isima.DAL.dll
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\isima.DAL\bin\Debug\isima.DAL.pdb
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\isima.DAL\bin\Debug\EntityFramework.dll
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\isima.DAL\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\isima.DAL\bin\Debug\Isima.DTO.dll
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\isima.DAL\bin\Debug\Isima.DTO.pdb
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\isima.DAL\bin\Debug\EntityFramework.xml
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\isima.DAL\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\isima.DAL\obj\Debug\isima.DAL.csprojAssemblyReference.cache
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\isima.DAL\obj\Debug\isima.DAL.csproj.CopyComplete
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\isima.DAL\obj\Debug\isima.DAL.dll
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\isima.DAL\obj\Debug\isima.DAL.pdb

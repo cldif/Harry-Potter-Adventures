@@ -48,16 +48,16 @@ namespace Isima.Tests
         {
             var data = new List<Map>
             {
-                new Map { ID =1,Configuration = "test"},
-                new Map {ID =2  ,Configuration = "test"},
-                new Map {ID =3,Configuration = "test" },
+                new Map {ID = 1, Configuration = "test" },
+                new Map {ID = 2, Configuration = "test" },
+                new Map {ID = 3, Configuration = "test" },
             };
             var mockSet = Tools.GetQueryableMockDbSet<Map>(data);
             var mockContext = new Mock<IsimaEntities>();
             mockContext.Setup(m => m.Map).Returns(mockSet.Object);
             var service = new MapRepository(mockContext.Object);
             int initCount = data.Count();
-            var result = service.AddMap(new MapDto { Configuration = "test"});
+            var result = service.AddMap(new MapDto { Configuration = "test" });
             int resultCount = data.Count();
             mockSet.Verify(m => m.Add(It.IsAny<Map>()), Times.Once());
             mockContext.Verify(m => m.SaveChanges(), Times.Once());

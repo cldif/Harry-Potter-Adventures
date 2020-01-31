@@ -25,16 +25,3 @@ C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.Business\obj\De
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.Business\obj\Debug\Isima.Business.csproj.CopyComplete
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.Business\obj\Debug\Isima.Business.dll
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.Business\obj\Debug\Isima.Business.pdb
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\Isima.Business\bin\Debug\Isima.Business.dll
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\Isima.Business\bin\Debug\Isima.Business.pdb
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\Isima.Business\bin\Debug\isima.DAL.dll
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\Isima.Business\bin\Debug\Isima.DTO.dll
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\Isima.Business\bin\Debug\EntityFramework.dll
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\Isima.Business\bin\Debug\isima.DAL.pdb
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\Isima.Business\bin\Debug\isima.DAL.dll.config
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\Isima.Business\bin\Debug\Isima.DTO.pdb
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\Isima.Business\bin\Debug\EntityFramework.xml
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\Isima.Business\obj\Debug\Isima.Business.csprojAssemblyReference.cache
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\Isima.Business\obj\Debug\Isima.Business.csproj.CopyComplete
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\Isima.Business\obj\Debug\Isima.Business.dll
-C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\Isima.Business\obj\Debug\Isima.Business.pdb

@@ -7,7 +7,7 @@ using System.Web;
 namespace Isima.API.Models
 {
     /// <summary>
-    /// Map render to client 
+    /// Student render to client 
     /// </summary>
     public class MapViewModel
     {
@@ -19,11 +19,12 @@ namespace Isima.API.Models
         /// </value>
         public int Id { get; set; }
         /// <summary>
-        /// Gets or sets the Config.
+        /// Gets or sets the Configuration.
         /// </summary>
         /// <value>
-        /// The config.
+        /// The Configuration.
         /// </value>
         public string Configuration { get; set; }
+       
     }
 }

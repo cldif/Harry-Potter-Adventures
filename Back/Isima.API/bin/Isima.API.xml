@@ -494,26 +494,26 @@
         </member>
         <member name="M:Isima.API.Controllers.MapController.Get">
             <summary>
-            Get list of all maps 
+            Get list of all Maps 
             </summary>
             <remarks>
-            Get list of all maps from the database no filtered
+            Get list of all Maps from the database no filtered
             </remarks>
             <returns></returns>
-            <response code="200"> List of map</response>
+            <response code="200"> List of Map</response>
         </member>
         <member name="M:Isima.API.Controllers.MapController.Post(Isima.API.Models.MapViewModel)">
             <summary>
-            Posts the specified map.
+            Posts the specified Map.
             </summary>
-            <param name="map">The map.</param>
+            <param name="Map">The Map.</param>
             <response code="200"> Created</response>
             <response code="400"> parameter issue</response>
             <response code="500">Other issues, see message included</response>
         </member>
         <member name="T:Isima.API.Models.MapViewModel">
             <summary>
-            Map render to client 
+            Student render to client 
             </summary>
         </member>
         <member name="P:Isima.API.Models.MapViewModel.Id">
@@ -526,10 +526,10 @@
         </member>
         <member name="P:Isima.API.Models.MapViewModel.Configuration">
             <summary>
-            Gets or sets the Config.
+            Gets or sets the Configuration.
             </summary>
             <value>
-            The config.
+            The Configuration.
             </value>
         </member>
     </members>
