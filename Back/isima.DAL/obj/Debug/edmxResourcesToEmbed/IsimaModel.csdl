@@ -1,16 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="IsimaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityType Name="Student">
+  <EntityContainer Name="IsimaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Map" EntityType="IsimaModel.Map" />
+  </EntityContainer>
+  <EntityType Name="Map">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Gender" Type="Int32" Nullable="false" />
-    <Property Name="DateOfBirth" Type="DateTime" Precision="0" />
+    <Property Name="configuration" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
   </EntityType>
-  <EntityContainer Name="IsimaEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Student" EntityType="Self.Student" />
-  </EntityContainer>
 </Schema>
