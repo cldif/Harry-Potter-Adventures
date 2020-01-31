@@ -13,3 +13,8 @@ C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.DTO\bin\Debug\I
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.DTO\bin\Debug\Isima.DTO.pdb
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.DTO\obj\Debug\Isima.DTO.dll
 C:\Users\sybessonne\Downloads\Harry-Potter-Adventures\Back\Isima.DTO\obj\Debug\Isima.DTO.pdb
+C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\Isima.DTO\bin\Debug\Isima.DTO.dll
+C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\Isima.DTO\bin\Debug\Isima.DTO.pdb
+C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\Isima.DTO\obj\Debug\Isima.DTO.csprojAssemblyReference.cache
+C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\Isima.DTO\obj\Debug\Isima.DTO.dll
+C:\Users\Kekun\Documents\Services\Harry-Potter-Adventures\Back\Isima.DTO\obj\Debug\Isima.DTO.pdb

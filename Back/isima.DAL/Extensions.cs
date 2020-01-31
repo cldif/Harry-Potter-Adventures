@@ -11,27 +11,21 @@ namespace Isima.DAL
 {
     public static class Extensions
     {
-        public static Student ToEntity(this StudentDto dto)
+        public static Map ToEntity(this MapDto dto)
         {
-            return new Student
+            return new Map
             {
-                Name = dto.Name,
-                Surname = dto.Surname,
-                DateOfBirth = dto.DateofBirth,
-                Gender = (int)dto.Gender
+                Configuration = dto.Configuration
             };
         }
 
-        public static StudentDto ToDto(this Student entity)
+        public static MapDto ToDto(this Map entity)
         {
             if(entity != null)
             {
-                return new StudentDto
+                return new MapDto
                 {
-                    Name = entity.Name,
-                    Surname = entity.Surname,
-                    DateofBirth = entity.DateOfBirth,
-                    Gender = (Gender)entity.Gender
+                    Configuration = entity.Configuration
                 };
             }
             return null;

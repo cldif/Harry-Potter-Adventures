@@ -70,7 +70,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="StudentRepositoryTests.cs" />
+    <Compile Include="MapRepositoryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\FakeDbSet.cs" />
     <Compile Include="Utilities\Tools.cs" />

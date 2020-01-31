@@ -1,16 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="IsimaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <EntityType Name="Student">
+<Schema Namespace="IsimaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="IsimaModelStoreContainer">
+    <EntitySet Name="Map" EntityType="IsimaModel.Store.Map" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Map">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="Surname" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="Gender" Type="int" Nullable="false" />
-    <Property Name="DateOfBirth" Type="date" />
+    <Property Name="Configuration" Type="nvarchar" Nullable="true" MaxLength="1000" />
   </EntityType>
-  <EntityContainer Name="IsimaModelStoreContainer">
-    <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
-  </EntityContainer>
 </Schema>

@@ -9,35 +9,32 @@ using System.Threading.Tasks;
 
 namespace isima.DAL
 {
-    public class StudentRepository : IDisposable
+    public class MapRepository : IDisposable
     {
 
         private readonly IsimaEntities _dbcontext = null;
 
-        public StudentRepository() 
+        public MapRepository() 
             {
             _dbcontext = new IsimaEntities();
             }
 
-        public StudentRepository(IsimaEntities context)
+        public MapRepository(IsimaEntities context)
         {
             _dbcontext = context;
         }
 
-        public List<StudentDto> GetAllStudent()
+        public List<MapDto> GetAllMap()
         {
             try
             {
-                //Get all student data line from database 
-                List<Student> studentEntities = _dbcontext.Student.ToList();
+                //Get all map data line from database 
+                List<Map> mapEntities = _dbcontext.Map.ToList();
                 //transform to DTO, and send to upper layer
-                return studentEntities.Select(x => new StudentDto
+                return mapEntities.Select(x => new MapDto
                 {
                     Id = x.ID,
-                    Name = x.Name,
-                    Surname = x.Surname,
-                    Gender = (Gender)x.Gender,
-                    DateofBirth = x.DateOfBirth
+                    Configuration = x.Configuration
                 }).ToList();
             }
             catch (Exception e)
@@ -47,12 +44,12 @@ namespace isima.DAL
             }
         }
 
-        public StudentDto AddStudent(StudentDto student)
+        public MapDto AddMap(MapDto map)
         {
-            Student newStudent = student.ToEntity();
-            var studentCreated = _dbcontext.Student.Add(newStudent);
+            Map newMap = map.ToEntity();
+            var mapCreated = _dbcontext.Map.Add(newMap);
             _dbcontext.SaveChanges();
-            return studentCreated.ToDto();
+            return mapCreated.ToDto();
         }
 
         public void Dispose()

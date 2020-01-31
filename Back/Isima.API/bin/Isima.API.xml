@@ -481,42 +481,42 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
-        <member name="T:Isima.API.Controllers.StudentController">
+        <member name="T:Isima.API.Controllers.MapController">
             <summary>
-            Student Endpoint
+            Map Endpoint
             </summary>
             <seealso cref="T:System.Web.Http.ApiController" />
         </member>
-        <member name="M:Isima.API.Controllers.StudentController.#ctor">
+        <member name="M:Isima.API.Controllers.MapController.#ctor">
             <summary>
-            Initializes a new instance of the <see cref="T:Isima.API.Controllers.StudentController"/> class.
+            Initializes a new instance of the <see cref="T:Isima.API.Controllers.MapController"/> class.
             </summary>
         </member>
-        <member name="M:Isima.API.Controllers.StudentController.Get">
+        <member name="M:Isima.API.Controllers.MapController.Get">
             <summary>
-            Get list of all students 
+            Get list of all maps 
             </summary>
             <remarks>
-            Get list of all students from the database no filtered
+            Get list of all maps from the database no filtered
             </remarks>
             <returns></returns>
-            <response code="200"> List of student</response>
+            <response code="200"> List of map</response>
         </member>
-        <member name="M:Isima.API.Controllers.StudentController.Post(Isima.API.Models.StudentViewModel)">
+        <member name="M:Isima.API.Controllers.MapController.Post(Isima.API.Models.MapViewModel)">
             <summary>
-            Posts the specified student.
+            Posts the specified map.
             </summary>
-            <param name="student">The student.</param>
+            <param name="map">The map.</param>
             <response code="200"> Created</response>
             <response code="400"> parameter issue</response>
             <response code="500">Other issues, see message included</response>
         </member>
-        <member name="T:Isima.API.Models.StudentViewModel">
+        <member name="T:Isima.API.Models.MapViewModel">
             <summary>
-            Student render to client 
+            Map render to client 
             </summary>
         </member>
-        <member name="P:Isima.API.Models.StudentViewModel.Id">
+        <member name="P:Isima.API.Models.MapViewModel.Id">
             <summary>
             Gets or sets the identifier.
             </summary>
@@ -524,36 +524,12 @@
             The identifier.
             </value>
         </member>
-        <member name="P:Isima.API.Models.StudentViewModel.Name">
+        <member name="P:Isima.API.Models.MapViewModel.Configuration">
             <summary>
-            Gets or sets the name.
+            Gets or sets the Config.
             </summary>
             <value>
-            The name.
-            </value>
-        </member>
-        <member name="P:Isima.API.Models.StudentViewModel.Surname">
-            <summary>
-            Gets or sets the surname.
-            </summary>
-            <value>
-            The surname.
-            </value>
-        </member>
-        <member name="P:Isima.API.Models.StudentViewModel.Gender">
-            <summary>
-            Gets or sets the gender.
-            </summary>
-            <value>
-            The gender.
-            </value>
-        </member>
-        <member name="P:Isima.API.Models.StudentViewModel.DoB">
-            <summary>
-            Gets or sets the date of birth.
-            </summary>
-            <value>
-            The do b.
+            The config.
             </value>
         </member>
     </members>
