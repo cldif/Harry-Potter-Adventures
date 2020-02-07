@@ -8,13 +8,17 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
+using System.Web.Http.Cors;
 
 namespace Isima.API.Controllers
 {
+
     /// <summary>
     /// Scenario Endpoint
     /// </summary>
     /// <seealso cref="System.Web.Http.ApiController" />
+    /// 
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class ScenarioController : ApiController
     {
         private readonly ScenarioService _scenarioService = null;
