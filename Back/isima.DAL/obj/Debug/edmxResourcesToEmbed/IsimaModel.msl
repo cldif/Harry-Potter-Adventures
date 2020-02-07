@@ -2,10 +2,10 @@
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="IsimaModelStoreContainer" CdmEntityContainer="IsimaEntities">
     <EntitySetMapping Name="Scenario">
-      <EntityTypeMapping TypeName="IsTypeOf(IsimaModel.Scenario)">
+      <EntityTypeMapping TypeName="IsimaModel.Scenario">
         <MappingFragment StoreEntitySet="Scenario">
-          <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Chaine" ColumnName="Chaine" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
