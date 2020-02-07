@@ -47,9 +47,9 @@ namespace Isima.Tests
         {
             var data = new List<Scenario>
             {
-                new Scenario {ID = 1, Chaine = "test"},
-                new Scenario {ID = 2, Chaine = "test"},
-                new Scenario {ID = 3, Chaine = "test"},
+                new Scenario {Id = 1, Chaine = "test"},
+                new Scenario {Id = 2, Chaine = "test"},
+                new Scenario {Id = 3, Chaine = "test"},
             };
             var mockSet = Tools.GetQueryableMockDbSet<Scenario>(data);
             var mockContext = new Mock<IsimaEntities>();

@@ -6,6 +6,10 @@
     <edmx:Diagrams>
       <Diagram DiagramId="589e139390654541b22fda9334110e93" Name="Diagram1">
         <EntityTypeShape EntityType="IsimaModel.Scenario" Width="1.5" PointX="0.75" PointY="0.75" />
+        <AssociationConnector Association="IsimaModel.FK_Scenario_Choix1" />
+        <AssociationConnector Association="IsimaModel.FK_Scenario_Choix2" />
+        <AssociationConnector Association="IsimaModel.FK_Scenario_Choix3" />
+        <AssociationConnector Association="IsimaModel.FK_Scenario_Choix4" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

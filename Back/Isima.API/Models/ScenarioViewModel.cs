@@ -24,5 +24,33 @@ namespace Isima.API.Models
         /// The Chaine.
         /// </value>
         public string Chaine { get; set; }
+        /// <summary>
+        /// Gets or sets the choice1.
+        /// </summary>
+        /// <value>
+        /// The Chaine.
+        /// </value>
+        public int? Choix1 { get; set; }
+        /// <summary>
+        /// Gets or sets the choice2.
+        /// </summary>
+        /// <value>
+        /// The Chaine.
+        /// </value>
+        public int? Choix2 { get; set; }
+        /// <summary>
+        /// Gets or sets the choice3.
+        /// </summary>
+        /// <value>
+        /// The Chaine.
+        /// </value>
+        public int? Choix3 { get; set; }
+        /// <summary>
+        /// Gets or sets the choice4.
+        /// </summary>
+        /// <value>
+        /// The Chaine.
+        /// </value>
+        public int? Choix4 { get; set; }
     }
 }

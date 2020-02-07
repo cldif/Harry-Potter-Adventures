@@ -10,5 +10,9 @@ namespace Isima.DTO
     {
         public int Id { get; set; }
         public string Chaine { get; set; }
+        public int? Choix1 { get; set; }
+        public int? Choix2 { get; set; }
+        public int? Choix3 { get; set; }
+        public int? Choix4 { get; set; }
     }
 }

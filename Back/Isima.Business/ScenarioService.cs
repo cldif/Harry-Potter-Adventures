@@ -31,7 +31,12 @@ namespace Isima.Business
             }
         }
 
-
-        
+        public void DeleteAllScenario()
+        {
+            using (ScenarioRepository _scenarioRepo = new ScenarioRepository())
+            {
+                _scenarioRepo.DeleteAllScenario();
+            }
+        }
     }
 }

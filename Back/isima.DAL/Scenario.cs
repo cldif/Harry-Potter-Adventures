@@ -14,7 +14,33 @@ namespace isima.DAL
     
     public partial class Scenario
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Scenario()
+        {
+            this.Scenario1 = new HashSet<Scenario>();
+            this.Scenario11 = new HashSet<Scenario>();
+            this.Scenario12 = new HashSet<Scenario>();
+            this.Scenario13 = new HashSet<Scenario>();
+        }
+    
         public int Id { get; set; }
         public string Chaine { get; set; }
+        public Nullable<int> Choix1 { get; set; }
+        public Nullable<int> Choix2 { get; set; }
+        public Nullable<int> Choix3 { get; set; }
+        public Nullable<int> Choix4 { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Scenario> Scenario1 { get; set; }
+        public virtual Scenario Scenario2 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Scenario> Scenario11 { get; set; }
+        public virtual Scenario Scenario3 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Scenario> Scenario12 { get; set; }
+        public virtual Scenario Scenario4 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Scenario> Scenario13 { get; set; }
+        public virtual Scenario Scenario5 { get; set; }
     }
 }

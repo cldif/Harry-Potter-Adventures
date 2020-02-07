@@ -14,7 +14,11 @@ namespace Isima.DAL
         {
             return new Scenario
             {
-                Chaine = dto.Chaine
+                Chaine = dto.Chaine,
+                Choix1 = dto.Choix1,
+                Choix2 = dto.Choix2,
+                Choix3 = dto.Choix3,
+                Choix4 = dto.Choix4,
             };
         }
 
@@ -24,7 +28,11 @@ namespace Isima.DAL
             {
                 return new ScenarioDto
                 {
-                    Chaine = entity.Chaine
+                    Chaine = entity.Chaine,
+                    Choix1 = entity.Choix1,
+                    Choix2 = entity.Choix2,
+                    Choix3 = entity.Choix3,
+                    Choix4 = entity.Choix4,
                 };
             }
             return null;

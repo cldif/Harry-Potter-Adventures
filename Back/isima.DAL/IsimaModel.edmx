@@ -11,9 +11,77 @@
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Chaine" Type="nvarchar" MaxLength="250" />
+          <Property Name="Choix1" Type="int" />
+          <Property Name="Choix2" Type="int" />
+          <Property Name="Choix3" Type="int" />
+          <Property Name="Choix4" Type="int" />
         </EntityType>
+        <Association Name="FK_Scenario_Choix1">
+          <End Role="Scenario" Type="Self.Scenario" Multiplicity="0..1" />
+          <End Role="Scenario1" Type="Self.Scenario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Scenario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Scenario1">
+              <PropertyRef Name="Choix1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Scenario_Choix2">
+          <End Role="Scenario" Type="Self.Scenario" Multiplicity="0..1" />
+          <End Role="Scenario1" Type="Self.Scenario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Scenario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Scenario1">
+              <PropertyRef Name="Choix2" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Scenario_Choix3">
+          <End Role="Scenario" Type="Self.Scenario" Multiplicity="0..1" />
+          <End Role="Scenario1" Type="Self.Scenario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Scenario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Scenario1">
+              <PropertyRef Name="Choix3" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Scenario_Choix4">
+          <End Role="Scenario" Type="Self.Scenario" Multiplicity="0..1" />
+          <End Role="Scenario1" Type="Self.Scenario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Scenario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Scenario1">
+              <PropertyRef Name="Choix4" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="IsimaModelStoreContainer">
           <EntitySet Name="Scenario" EntityType="Self.Scenario" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Scenario_Choix1" Association="Self.FK_Scenario_Choix1">
+            <End Role="Scenario" EntitySet="Scenario" />
+            <End Role="Scenario1" EntitySet="Scenario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Scenario_Choix2" Association="Self.FK_Scenario_Choix2">
+            <End Role="Scenario" EntitySet="Scenario" />
+            <End Role="Scenario1" EntitySet="Scenario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Scenario_Choix3" Association="Self.FK_Scenario_Choix3">
+            <End Role="Scenario" EntitySet="Scenario" />
+            <End Role="Scenario1" EntitySet="Scenario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Scenario_Choix4" Association="Self.FK_Scenario_Choix4">
+            <End Role="Scenario" EntitySet="Scenario" />
+            <End Role="Scenario1" EntitySet="Scenario" />
+          </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -21,6 +89,22 @@
       <Schema Namespace="IsimaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="IsimaEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Scenario" EntityType="IsimaModel.Scenario" />
+          <AssociationSet Name="FK_Scenario_Choix1" Association="IsimaModel.FK_Scenario_Choix1">
+            <End Role="Scenario" EntitySet="Scenario" />
+            <End Role="Scenario1" EntitySet="Scenario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Scenario_Choix2" Association="IsimaModel.FK_Scenario_Choix2">
+            <End Role="Scenario" EntitySet="Scenario" />
+            <End Role="Scenario1" EntitySet="Scenario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Scenario_Choix3" Association="IsimaModel.FK_Scenario_Choix3">
+            <End Role="Scenario" EntitySet="Scenario" />
+            <End Role="Scenario1" EntitySet="Scenario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Scenario_Choix4" Association="IsimaModel.FK_Scenario_Choix4">
+            <End Role="Scenario" EntitySet="Scenario" />
+            <End Role="Scenario1" EntitySet="Scenario" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="Scenario">
           <Key>
@@ -28,7 +112,67 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Chaine" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Choix1" Type="Int32" />
+          <Property Name="Choix2" Type="Int32" />
+          <Property Name="Choix3" Type="Int32" />
+          <Property Name="Choix4" Type="Int32" />
+          <NavigationProperty Name="Scenario1" Relationship="IsimaModel.FK_Scenario_Choix1" FromRole="Scenario" ToRole="Scenario1" />
+          <NavigationProperty Name="Scenario2" Relationship="IsimaModel.FK_Scenario_Choix1" FromRole="Scenario1" ToRole="Scenario" />
+          <NavigationProperty Name="Scenario11" Relationship="IsimaModel.FK_Scenario_Choix2" FromRole="Scenario" ToRole="Scenario1" />
+          <NavigationProperty Name="Scenario3" Relationship="IsimaModel.FK_Scenario_Choix2" FromRole="Scenario1" ToRole="Scenario" />
+          <NavigationProperty Name="Scenario12" Relationship="IsimaModel.FK_Scenario_Choix3" FromRole="Scenario" ToRole="Scenario1" />
+          <NavigationProperty Name="Scenario4" Relationship="IsimaModel.FK_Scenario_Choix3" FromRole="Scenario1" ToRole="Scenario" />
+          <NavigationProperty Name="Scenario13" Relationship="IsimaModel.FK_Scenario_Choix4" FromRole="Scenario" ToRole="Scenario1" />
+          <NavigationProperty Name="Scenario5" Relationship="IsimaModel.FK_Scenario_Choix4" FromRole="Scenario1" ToRole="Scenario" />
         </EntityType>
+        <Association Name="FK_Scenario_Choix1">
+          <End Type="IsimaModel.Scenario" Role="Scenario" Multiplicity="0..1" />
+          <End Type="IsimaModel.Scenario" Role="Scenario1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Scenario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Scenario1">
+              <PropertyRef Name="Choix1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Scenario_Choix2">
+          <End Type="IsimaModel.Scenario" Role="Scenario" Multiplicity="0..1" />
+          <End Type="IsimaModel.Scenario" Role="Scenario1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Scenario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Scenario1">
+              <PropertyRef Name="Choix2" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Scenario_Choix3">
+          <End Type="IsimaModel.Scenario" Role="Scenario" Multiplicity="0..1" />
+          <End Type="IsimaModel.Scenario" Role="Scenario1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Scenario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Scenario1">
+              <PropertyRef Name="Choix3" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Scenario_Choix4">
+          <End Type="IsimaModel.Scenario" Role="Scenario" Multiplicity="0..1" />
+          <End Type="IsimaModel.Scenario" Role="Scenario1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Scenario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Scenario1">
+              <PropertyRef Name="Choix4" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -38,6 +182,10 @@
           <EntitySetMapping Name="Scenario">
             <EntityTypeMapping TypeName="IsimaModel.Scenario">
               <MappingFragment StoreEntitySet="Scenario">
+                <ScalarProperty Name="Choix4" ColumnName="Choix4" />
+                <ScalarProperty Name="Choix3" ColumnName="Choix3" />
+                <ScalarProperty Name="Choix2" ColumnName="Choix2" />
+                <ScalarProperty Name="Choix1" ColumnName="Choix1" />
                 <ScalarProperty Name="Chaine" ColumnName="Chaine" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>

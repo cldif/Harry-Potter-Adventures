@@ -42,7 +42,11 @@ namespace Isima.API.Controllers
             IEnumerable<ScenarioViewModel> scenarioList = scenarios.Select(st => new ScenarioViewModel
             {
                 Id = st.Id,
-                Chaine = st.Chaine
+                Chaine = st.Chaine,
+                Choix1 = st.Choix1,
+                Choix2 = st.Choix2,
+                Choix3 = st.Choix3,
+                Choix4 = st.Choix4
             });
 
             return Ok(scenarioList);
@@ -76,7 +80,11 @@ namespace Isima.API.Controllers
             {
                 _scenarioService.AddScenario(new ScenarioDto
                 {
-                    Chaine = scenario.Chaine
+                    Chaine = scenario.Chaine,
+                    Choix1 = scenario.Choix1,
+                    Choix2 = scenario.Choix2,
+                    Choix3 = scenario.Choix3,
+                    Choix4 = scenario.Choix4
                 });
 
                 return Ok();
@@ -86,6 +94,21 @@ namespace Isima.API.Controllers
                 return InternalServerError(e);
             }
 
+        }
+
+        /// <summary>
+        /// Delete all
+        /// </summary>
+        /// <remarks>
+        /// delete all scenario
+        /// </remarks>
+        /// <returns></returns>
+        /// <response code="200"> delete successfully</response>
+        public IHttpActionResult DeleteAll()
+        {
+            _scenarioService.DeleteAllScenario();
+
+            return Ok();
         }
 
         //// PUT: api/Scenario/5

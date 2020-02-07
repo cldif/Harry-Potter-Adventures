@@ -33,7 +33,11 @@ namespace Isima.DAL
                 return scenarioEntities.Select(x => new ScenarioDto
                 {
                     Id = x.Id,
-                    Chaine = x.Chaine
+                    Chaine = x.Chaine,
+                    Choix1 = x.Choix1,
+                    Choix2 = x.Choix2,
+                    Choix3 = x.Choix3,
+                    Choix4 = x.Choix4
                 }).ToList();
             }
             catch (Exception e)
@@ -49,6 +53,29 @@ namespace Isima.DAL
             var scenarioCreated = _dbcontext.Scenario.Add(newScenario);
             _dbcontext.SaveChanges();
             return scenarioCreated.ToDto();
+        }
+
+        
+        public void DeleteAllScenario()
+        {
+            try
+            {
+                //Get all scenario data line from database 
+                List<Scenario> scenarioEntities = _dbcontext.Scenario.ToList();
+                //transform to DTO, and send to upper layer
+                /*scenarioEntities.ToList().ForEach(item => {
+                    _dbcontext.Scenario.Remove(item);
+                });*/
+
+                _dbcontext.Scenario.RemoveRange(scenarioEntities);
+                _dbcontext.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                throw;
+            }
+
         }
 
         public void Dispose()
