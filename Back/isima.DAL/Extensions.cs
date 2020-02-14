@@ -14,11 +14,8 @@ namespace Isima.DAL
         {
             return new Scenario
             {
-                Chaine = dto.Chaine,
-                Choix1 = dto.Choix1,
-                Choix2 = dto.Choix2,
-                Choix3 = dto.Choix3,
-                Choix4 = dto.Choix4,
+                Text = dto.Text,
+                GameOver = dto.GameOver
             };
         }
 
@@ -26,17 +23,34 @@ namespace Isima.DAL
         {
             if(entity != null)
             {
+
                 return new ScenarioDto
                 {
-                    Chaine = entity.Chaine,
-                    Choix1 = entity.Choix1,
-                    Choix2 = entity.Choix2,
-                    Choix3 = entity.Choix3,
-                    Choix4 = entity.Choix4,
+                    Text = entity.Text,
+                    GameOver = entity.GameOver,
+                    Choice1 = new ChoiceDto
+                    {
+                        ScenarioId = entity.ChoiceList.Choice.ScenarioId,
+                        Text = entity.ChoiceList.Choice.Text,
+                    },
+                    Choice2 = new ChoiceDto
+                    {
+                        ScenarioId = entity.ChoiceList.Choice1.ScenarioId,
+                        Text = entity.ChoiceList.Choice1.Text,
+                    },
+                    Choice3 = new ChoiceDto
+                    {
+                        //ScenarioId = Choix3Id,
+                        //Text = Choix3Text,
+                    },
+                    Choice4 = new ChoiceDto
+                    {
+                        //ScenarioId = entity.ChoiceList.Choice3.ScenarioId,
+                        //Text = entity.ChoiceList.Choice3.Text,
+                    },
                 };
             }
             return null;
-     
         }
     }
 }

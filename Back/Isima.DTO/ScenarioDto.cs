@@ -8,11 +8,11 @@ namespace Isima.DTO
 {
     public class ScenarioDto
     {
-        public int Id { get; set; }
-        public string Chaine { get; set; }
-        public int? Choix1 { get; set; }
-        public int? Choix2 { get; set; }
-        public int? Choix3 { get; set; }
-        public int? Choix4 { get; set; }
+        public string Text { get; set; }
+        public byte GameOver { get; set; }
+        public ChoiceDto Choice1 { get; set; }
+        public ChoiceDto Choice2 { get; set; }
+        public ChoiceDto Choice3 { get; set; }
+        public ChoiceDto Choice4 { get; set; }
     }
 }

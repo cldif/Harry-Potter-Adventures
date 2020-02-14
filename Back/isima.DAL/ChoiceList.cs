@@ -12,21 +12,25 @@ namespace isima.DAL
     using System;
     using System.Collections.Generic;
     
-    public partial class Scenario
+    public partial class ChoiceList
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Scenario()
+        public ChoiceList()
         {
-            this.Choice = new HashSet<Choice>();
+            this.Scenario = new HashSet<Scenario>();
         }
     
         public int Id { get; set; }
-        public string Text { get; set; }
-        public Nullable<int> ChoiceListId { get; set; }
-        public byte GameOver { get; set; }
+        public Nullable<int> Choice1Id { get; set; }
+        public Nullable<int> Choice2Id { get; set; }
+        public Nullable<int> Choice3Id { get; set; }
+        public Nullable<int> Choice4Id { get; set; }
     
+        public virtual Choice Choice { get; set; }
+        public virtual Choice Choice1 { get; set; }
+        public virtual Choice Choice2 { get; set; }
+        public virtual Choice Choice3 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Choice> Choice { get; set; }
-        public virtual ChoiceList ChoiceList { get; set; }
+        public virtual ICollection<Scenario> Scenario { get; set; }
     }
 }

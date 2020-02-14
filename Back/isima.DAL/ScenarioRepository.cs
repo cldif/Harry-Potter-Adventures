@@ -23,7 +23,21 @@ namespace Isima.DAL
             _dbcontext = context;
         }
 
-        public List<ScenarioDto> GetAllScenario()
+        public ScenarioDto GetScenario(int id)
+        {
+            try
+            {
+                ScenarioDto scenarioEntities = _dbcontext.Scenario.Find(id).ToDto();
+                return scenarioEntities;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                throw;
+            }
+        }
+
+       /* public List<ScenarioDto> GetAllScenario()
         {
             try
             {
@@ -62,11 +76,6 @@ namespace Isima.DAL
             {
                 //Get all scenario data line from database 
                 List<Scenario> scenarioEntities = _dbcontext.Scenario.ToList();
-                //transform to DTO, and send to upper layer
-                /*scenarioEntities.ToList().ForEach(item => {
-                    _dbcontext.Scenario.Remove(item);
-                });*/
-
                 _dbcontext.Scenario.RemoveRange(scenarioEntities);
                 _dbcontext.SaveChanges();
             }
@@ -75,8 +84,7 @@ namespace Isima.DAL
                 Console.WriteLine(e.Message);
                 throw;
             }
-
-        }
+        }*/
 
         public void Dispose()
         {

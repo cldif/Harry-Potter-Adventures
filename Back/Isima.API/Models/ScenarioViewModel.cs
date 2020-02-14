@@ -11,46 +11,47 @@ namespace Isima.API.Models
     public class ScenarioViewModel
     {
         /// <summary>
-        /// Gets or sets the identifier.
-        /// </summary>
-        /// <value>
-        /// The identifier.
-        /// </value>
-        public int Id { get; set; }
-        /// <summary>
         /// Gets or sets the Chaine.
         /// </summary>
         /// <value>
         /// The Chaine.
         /// </value>
-        public string Chaine { get; set; }
+        public string Text { get; set; }
         /// <summary>
-        /// Gets or sets the choice1.
+        /// Get if this is game over
         /// </summary>
         /// <value>
-        /// The Chaine.
+        /// Get if this is game over
         /// </value>
-        public int? Choix1 { get; set; }
+        public byte GameOver { get; set; }
+
         /// <summary>
-        /// Gets or sets the choice2.
+        /// the choice 1
         /// </summary>
         /// <value>
-        /// The Chaine.
+        /// the choice 1
         /// </value>
-        public int? Choix2 { get; set; }
+        public ChoiceViewModel Choice1 { get; set; }
         /// <summary>
-        /// Gets or sets the choice3.
+        /// the choice 2
         /// </summary>
         /// <value>
-        /// The Chaine.
+        /// the choice 2
         /// </value>
-        public int? Choix3 { get; set; }
+        public ChoiceViewModel Choice2 { get; set; }
         /// <summary>
-        /// Gets or sets the choice4.
+        /// the choice 3
         /// </summary>
         /// <value>
-        /// The Chaine.
+        /// the choice 3
         /// </value>
-        public int? Choix4 { get; set; }
+        public ChoiceViewModel Choice3 { get; set; }
+        /// <summary>
+        /// the choice 4
+        /// </summary>
+        /// <value>
+        /// the choice 4
+        /// </value>
+        public ChoiceViewModel Choice4 { get; set; }
     }
 }

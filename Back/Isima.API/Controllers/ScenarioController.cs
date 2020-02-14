@@ -32,29 +32,18 @@ namespace Isima.API.Controllers
 
 
         /// <summary>
-        /// Get list of all scenarios 
+        /// Get a scenario
         /// </summary>
         /// <remarks>
-        /// Get list of all scenarios from the database no filtered
+        /// Get a scenario
         /// </remarks>
         /// <returns></returns>
-        /// <response code="200"> List of scenario</response>
+        /// <response code="200">A scenario</response>
         [ResponseType(typeof(IEnumerable<ScenarioViewModel>))]
-        public IHttpActionResult Get()
+        public IHttpActionResult Get(int id)
         {
-            IList<ScenarioDto> scenarios = _scenarioService.GetAllScenario();
-            IEnumerable<ScenarioViewModel> scenarioList = scenarios.Select(st => new ScenarioViewModel
-            {
-                Id = st.Id,
-                Chaine = st.Chaine,
-                Choix1 = st.Choix1,
-                Choix2 = st.Choix2,
-                Choix3 = st.Choix3,
-                Choix4 = st.Choix4
-            });
-
-            return Ok(scenarioList);
-
+            ScenarioDto scenarios = _scenarioService.GetScenario(id);
+            return Ok(scenarios);
         }
 
         //public IHttpActionResult Get(int id)
@@ -66,6 +55,7 @@ namespace Isima.API.Controllers
         //   var scenario = _scenarioService.Gets
         //}
 
+        /*
         /// <summary>
         /// Posts the specified scenario.
         /// </summary>
@@ -97,32 +87,6 @@ namespace Isima.API.Controllers
             {
                 return InternalServerError(e);
             }
-
-        }
-
-        /// <summary>
-        /// Delete all
-        /// </summary>
-        /// <remarks>
-        /// delete all scenario
-        /// </remarks>
-        /// <returns></returns>
-        /// <response code="200"> delete successfully</response>
-        public IHttpActionResult DeleteAll()
-        {
-            _scenarioService.DeleteAllScenario();
-
-            return Ok();
-        }
-
-        //// PUT: api/Scenario/5
-        //public void Put(int id, [FromBody]string value)
-        //{
-        //}
-
-        //// DELETE: api/Scenario/5
-        //public void Delete(int id)
-        //{
-        //}
+        }*/
     }
 }

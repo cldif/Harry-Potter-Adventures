@@ -25,6 +25,8 @@ namespace isima.DAL
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Choice> Choice { get; set; }
+        public virtual DbSet<ChoiceList> ChoiceList { get; set; }
         public virtual DbSet<Scenario> Scenario { get; set; }
     }
 }

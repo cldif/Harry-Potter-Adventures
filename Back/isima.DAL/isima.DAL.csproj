@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Choice.cs">
+      <DependentUpon>IsimaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChoiceList.cs">
+      <DependentUpon>IsimaModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Extensions.cs" />
     <Compile Include="IsimaModel.Context.cs">
       <AutoGen>True</AutoGen>

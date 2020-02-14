@@ -7,35 +7,11 @@ namespace Isima.Business
 {
     public class ScenarioService
     {
-
-        public IList<ScenarioDto> GetAllScenario()
-        {
-            using(ScenarioRepository _scenarioRepo = new ScenarioRepository())
-            {
-                return _scenarioRepo.GetAllScenario();
-            }
-        }
-
-        public ScenarioDto AddScenario(ScenarioDto scenario)
-        {
-            if(scenario !=null)
-            {
-                using (ScenarioRepository _scenarioRepo = new ScenarioRepository())
-                {
-                    return _scenarioRepo.AddScenario(scenario);
-                }
-            }
-           else
-            {
-                throw new ArgumentNullException(nameof(scenario), "Scenario can't be null");
-            }
-        }
-
-        public void DeleteAllScenario()
+        public ScenarioDto GetScenario(int id)
         {
             using (ScenarioRepository _scenarioRepo = new ScenarioRepository())
             {
-                _scenarioRepo.DeleteAllScenario();
+                return _scenarioRepo.GetScenario(id);
             }
         }
     }
