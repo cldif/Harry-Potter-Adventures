@@ -1,4 +1,5 @@
 import { BrowserModule } from "@angular/platform-browser";
+import { HttpClientModule } from "@angular/common/http";
 import { NgModule } from "@angular/core";
 import { AppRoutingModule, routes } from "./app-routing.module";
 import { RouterModule } from "@angular/router";
@@ -33,6 +34,7 @@ import { LayoutModule } from "@angular/cdk/layout";
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
     BrowserAnimationsModule,
