@@ -1,0 +1,44 @@
+:host {
+  width: 100%;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.game-container {
+  width: 75%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.story-container,
+.choices-container {
+  margin-bottom: 20px;
+  padding: 20px 50px 20px 50px;
+  background-color: #30303a;
+  border-radius: 20px;
+}
+
+.choices-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mat-list-base .mat-list-item,
+.mat-list-base .mat-list-option {
+  height: auto !important;
+}
+
+button {
+  width: 20%;
+  height: auto;
+  padding: 1rem;
+  white-space: normal !important;
+  line-height: 1.2;
+}
