@@ -1,18 +1,12 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { HttpClientModule } from "@angular/common/http";
 import { NgModule } from "@angular/core";
-import { AppRoutingModule, routes } from "./app-routing.module";
-import { RouterModule } from "@angular/router";
-
-import { AppComponent } from "./app.component";
-
-import { GameComponent } from "./game/game.component";
-import { SettingsComponent } from "./settings/settings.component";
-import { AdminComponent } from "./admin/admin.component";
-import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
-import { TopBarComponent } from "./top-bar/top-bar.component";
+import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { HomeComponent } from "./home/home.component";
+import { HttpClientModule } from "@angular/common/http";
+import { RouterModule } from "@angular/router";
+import { LayoutModule } from "@angular/cdk/layout";
+
+import { AppRoutingModule, routes } from "./app-routing.module";
+
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatCardModule } from "@angular/material/card";
 import { MatMenuModule } from "@angular/material/menu";
@@ -20,7 +14,16 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatListModule } from "@angular/material/list";
-import { LayoutModule } from "@angular/cdk/layout";
+import { MatDialogModule } from "@angular/material/dialog";
+
+import { AppComponent } from "./app.component";
+import { GameComponent } from "./game/game.component";
+import { RestErrorComponent } from "./game/rest-error/rest-error.component";
+import { SettingsComponent } from "./settings/settings.component";
+import { AdminComponent } from "./admin/admin.component";
+import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
+import { TopBarComponent } from "./top-bar/top-bar.component";
+import { HomeComponent } from "./home/home.component";
 
 @NgModule({
   declarations: [
@@ -30,7 +33,8 @@ import { LayoutModule } from "@angular/cdk/layout";
     SettingsComponent,
     AdminComponent,
     PageNotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    RestErrorComponent
   ],
   imports: [
     BrowserModule,
@@ -45,8 +49,10 @@ import { LayoutModule } from "@angular/cdk/layout";
     MatButtonModule,
     MatDividerModule,
     MatListModule,
-    LayoutModule
+    LayoutModule,
+    MatDialogModule
   ],
+  entryComponents: [RestErrorComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

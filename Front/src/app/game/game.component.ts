@@ -1,6 +1,14 @@
 import { Component, OnInit } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
+
 import { environment } from "../../environments/environment";
+import { RestErrorComponent } from "./rest-error/rest-error.component";
+
+import {
+  MatDialog,
+  MatDialogRef,
+  MAT_DIALOG_DATA
+} from "@angular/material/dialog";
 
 @Component({
   selector: "app-game",
@@ -12,14 +20,28 @@ export class GameComponent implements OnInit {
 
   scenarioHistory = [];
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, public dialog: MatDialog) {}
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(RestErrorComponent, {
+      width: "400px"
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log("The dialog was closed.");
+    });
+  }
 
   fetchScenario(id) {
-    return this.http
-      .get(environment.apiUrl + "/api/Scenario/" + id)
-      .subscribe(result => {
+    return this.http.get(environment.apiUrl + "/api/Scenario/" + id).subscribe(
+      result => {
         this.scenarioHistory.push(result);
-      });
+      },
+      error => {
+        console.error(error);
+        this.openDialog();
+      }
+    );
   }
 
   getChoicesArray() {
