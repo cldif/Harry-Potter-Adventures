@@ -11,14 +11,8 @@
         </mat-list>
     </div>
 
-    <div class="choices-container" *ngIf="getChoicesArray()[0]">
-        <button *ngIf="getChoicesArray()[0].text" mat-raised-button color="primary"
-            (click)="fetchScenario(getChoicesArray()[0].nextId)">{{ getChoicesArray()[0].text }}</button>
-        <button *ngIf="getChoicesArray()[1].text" mat-raised-button color="primary"
-            (click)="fetchScenario(getChoicesArray()[1].nextId)">{{ getChoicesArray()[1].text }}</button>
-        <button *ngIf="getChoicesArray()[2].text" mat-raised-button color="primary"
-            (click)="fetchScenario(getChoicesArray()[2].nextId)">{{ getChoicesArray()[2].text }}</button>
-        <button *ngIf="getChoicesArray()[3].text" mat-raised-button color="primary"
-            (click)="fetchScenario(getChoicesArray()[3].nextId)">{{ getChoicesArray()[3].text }}</button>
+    <div *ngIf="lastScenario" class="choices-container">
+        <button *ngFor="let choice of lastScenario?.Choices" mat-raised-button color="primary"
+            (click)="updateComponent(choice.NextScenarioId)">{{ choice.Text }}</button>
     </div>
 </div>
