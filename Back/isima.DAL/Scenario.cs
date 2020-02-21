@@ -18,15 +18,17 @@ namespace isima.DAL
         public Scenario()
         {
             this.Choice = new HashSet<Choice>();
+            this.Choice1 = new HashSet<Choice>();
         }
     
         public int Id { get; set; }
+        public string Label { get; set; }
         public string Text { get; set; }
-        public Nullable<int> ChoiceListId { get; set; }
         public byte GameOver { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Choice> Choice { get; set; }
-        public virtual ChoiceList ChoiceList { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Choice> Choice1 { get; set; }
     }
 }

@@ -56,9 +56,7 @@
     <Compile Include="Choice.cs">
       <DependentUpon>IsimaModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="ChoiceList.cs">
-      <DependentUpon>IsimaModel.tt</DependentUpon>
-    </Compile>
+    <Compile Include="ChoiceRepository.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="IsimaModel.Context.cs">
       <AutoGen>True</AutoGen>

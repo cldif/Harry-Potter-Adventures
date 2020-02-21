@@ -14,27 +14,12 @@ namespace isima.DAL
     
     public partial class Choice
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Choice()
-        {
-            this.ChoiceList = new HashSet<ChoiceList>();
-            this.ChoiceList1 = new HashSet<ChoiceList>();
-            this.ChoiceList2 = new HashSet<ChoiceList>();
-            this.ChoiceList3 = new HashSet<ChoiceList>();
-        }
-    
         public int Id { get; set; }
-        public int ScenarioId { get; set; }
+        public Nullable<int> CurrentScenarioId { get; set; }
+        public Nullable<int> NextScenarioId { get; set; }
         public string Text { get; set; }
     
         public virtual Scenario Scenario { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ChoiceList> ChoiceList { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ChoiceList> ChoiceList1 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ChoiceList> ChoiceList2 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ChoiceList> ChoiceList3 { get; set; }
+        public virtual Scenario Scenario1 { get; set; }
     }
 }

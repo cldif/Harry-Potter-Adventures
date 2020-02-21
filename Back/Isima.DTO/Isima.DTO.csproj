@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChoiceDto.cs" />
-    <Compile Include="ChoiceListDto.cs" />
     <Compile Include="ScenarioDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
