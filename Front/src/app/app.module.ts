@@ -11,10 +11,15 @@ import { MatGridListModule } from "@angular/material/grid-list";
 import { MatCardModule } from "@angular/material/card";
 import { MatMenuModule } from "@angular/material/menu";
 import { MatIconModule } from "@angular/material/icon";
-import { MatButtonModule } from "@angular/material/button";
+import { MatButtonModule } from "@angular/material";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatListModule } from "@angular/material/list";
 import { MatDialogModule } from "@angular/material/dialog";
+import { FormsModule } from "@angular/forms";
+import { MatFormFieldModule } from "@angular/material";
+import { MatInputModule } from "@angular/material";
+import { MatRippleModule } from "@angular/material";
+import { MatProgressSpinnerModule } from "@angular/material";
 
 import { AppComponent } from "./app.component";
 import { GameComponent } from "./game/game.component";
@@ -50,7 +55,12 @@ import { HomeComponent } from "./home/home.component";
     MatDividerModule,
     MatListModule,
     LayoutModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatRippleModule,
+    MatProgressSpinnerModule
   ],
   entryComponents: [RestErrorComponent],
   providers: [],
