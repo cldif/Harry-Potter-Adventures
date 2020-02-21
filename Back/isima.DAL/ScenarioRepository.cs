@@ -27,7 +27,18 @@ namespace Isima.DAL
         {
             try
             {
-                ScenarioDto scenarioEntities = _dbcontext.Scenario.Find(id).ToDto();
+                List<Choice> choiceList = _dbcontext.Choice.ToList();
+
+                //transform to DTO, and send to upper layer
+                List<ChoiceDto> choices = choiceList.Where(x => x.CurrentScenarioId == id).
+                                                    Select(x => new ChoiceDto
+                {
+                    CurrentScenarioId = x.CurrentScenarioId,
+                    NextScenarioId = x.NextScenarioId,
+                    Text = x.Text,
+                }).ToList();
+
+                ScenarioDto scenarioEntities = _dbcontext.Scenario.Find(id).ToDto(choices);
                 return scenarioEntities;
             }
             catch (Exception e)
@@ -37,7 +48,7 @@ namespace Isima.DAL
             }
         }
 
-       /* public List<ScenarioDto> GetAllScenario()
+        public List<ScenarioDto> GetAllScenario()
         {
             try
             {
@@ -47,11 +58,9 @@ namespace Isima.DAL
                 return scenarioEntities.Select(x => new ScenarioDto
                 {
                     Id = x.Id,
-                    Chaine = x.Chaine,
-                    Choix1 = x.Choix1,
-                    Choix2 = x.Choix2,
-                    Choix3 = x.Choix3,
-                    Choix4 = x.Choix4
+                    Label = x.Label,
+                    Text = x.Text,
+                    GameOver = x.GameOver,
                 }).ToList();
             }
             catch (Exception e)
@@ -66,11 +75,10 @@ namespace Isima.DAL
             Scenario newScenario = scenario.ToEntity();
             var scenarioCreated = _dbcontext.Scenario.Add(newScenario);
             _dbcontext.SaveChanges();
-            return scenarioCreated.ToDto();
+            return scenarioCreated.ToDto(scenario.Choices);
         }
 
-        
-        public void DeleteAllScenario()
+        /*public void DeleteAllScenario()
         {
             try
             {

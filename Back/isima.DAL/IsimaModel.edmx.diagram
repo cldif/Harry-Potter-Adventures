@@ -5,15 +5,10 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="589e139390654541b22fda9334110e93" Name="Diagram1">
-        <EntityTypeShape EntityType="IsimaModel.Choice" Width="1.5" PointX="0.75" PointY="1.125" />
-        <EntityTypeShape EntityType="IsimaModel.ChoiceList" Width="1.5" PointX="3" PointY="1" />
-        <EntityTypeShape EntityType="IsimaModel.Scenario" Width="1.5" PointX="5.25" PointY="1.375" />
-        <AssociationConnector Association="IsimaModel.FK_Choix_Scenario" />
-        <AssociationConnector Association="IsimaModel.FK_Scenario_Choix1" />
-        <AssociationConnector Association="IsimaModel.FK_Scenario_Choix2" />
-        <AssociationConnector Association="IsimaModel.FK_Scenario_Choix3" />
-        <AssociationConnector Association="IsimaModel.FK_Scenario_Choix4" />
-        <AssociationConnector Association="IsimaModel.FK_Scenario_Choix" />
+        <EntityTypeShape EntityType="IsimaModel.Choice" Width="1.5" PointX="3" PointY="0.875" />
+        <EntityTypeShape EntityType="IsimaModel.Scenario" Width="1.5" PointX="0.75" PointY="0.875" />
+        <AssociationConnector Association="IsimaModel.FK_Choice_CurrentScenario" />
+        <AssociationConnector Association="IsimaModel.FK_Choice_NextScenario" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

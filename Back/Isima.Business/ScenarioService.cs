@@ -14,5 +14,19 @@ namespace Isima.Business
                 return _scenarioRepo.GetScenario(id);
             }
         }
+        public List<ScenarioDto> GetAllScenario()
+        {
+            using (ScenarioRepository _scenarioRepo = new ScenarioRepository())
+            {
+                return _scenarioRepo.GetAllScenario();
+            }
+        }
+        public ScenarioDto AddScenario(ScenarioDto scenario)
+        {
+            using (ScenarioRepository _scenarioRepo = new ScenarioRepository())
+            {
+               return _scenarioRepo.AddScenario(scenario);
+            }
+        }
     }
 }
