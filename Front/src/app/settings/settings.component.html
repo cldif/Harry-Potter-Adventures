@@ -1,7 +1,7 @@
 <div class="container">
     <mat-card class="example-card">
         <mat-card-header>
-            <mat-card-title>Login</mat-card-title>
+            <mat-card-title>Changer l'url Back</mat-card-title>
         </mat-card-header>
 
         <mat-card-content>
@@ -10,15 +10,15 @@
                     <tr>
                         <td>
                             <mat-form-field class="example-full-width">
-                                <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
+                                <input matInput placeholder="Url" [(ngModel)]="url" name="url" required>
                             </mat-form-field>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <mat-form-field class="example-full-width">
-                                <input matInput placeholder="Password" [(ngModel)]="password" type="password"
-                                    name="password" required>
+                                <input matInput placeholder="Port" [(ngModel)]="port" type="port"
+                                    name="port" required>
                             </mat-form-field>
                         </td>
                     </tr>
@@ -27,7 +27,7 @@
             <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
         </mat-card-content>
         <mat-card-actions>
-            <button class="submit-button" mat-raised-button (click)="login()" color="primary">Login</button>
+            <button class="submit-button" mat-raised-button (click)="changeBackUrl()" color="primary">Changer l'url</button>
         </mat-card-actions>
     </mat-card>
 </div>

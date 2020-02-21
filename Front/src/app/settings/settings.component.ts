@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-
+import { environment } from '../../environments/environment'; 
+import { HttpClient } from "@angular/common/http";
 import { Router } from "@angular/router";
 
 @Component({
@@ -9,20 +10,18 @@ import { Router } from "@angular/router";
 
   styleUrls: ["settings.component.css"]
 })
+
 export class SettingsComponent implements OnInit {
   constructor(private router: Router) {}
 
-  username: string;
+  url: string;
 
-  password: string;
+  port: string;
 
   ngOnInit() {}
 
-  login(): void {
-    if (this.username == "admin" && this.password == "admin") {
-      this.router.navigate(["user"]);
-    } else {
-      alert("Invalid credentials");
-    }
+  changeBackUrl(): void {
+    var new_url = this.url;
+    environment.apiUrl =  this.url; 
   }
 }
