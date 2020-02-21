@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiUrl: "https://harrypotterapiisima.azurewebsites.net"
+  apiUrl: "https://harrypotterapiisima.azurewebsites.net",
+  firstScenarioId: 1
 };
 
 /*
