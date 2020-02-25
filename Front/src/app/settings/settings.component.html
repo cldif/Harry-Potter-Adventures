@@ -1,33 +1,28 @@
-<div class="container">
-    <mat-card class="example-card">
-        <mat-card-header>
-            <mat-card-title>Changer l'url Back</mat-card-title>
-        </mat-card-header>
+<h3>Réglages des paramètres de l'application</h3>
 
-        <mat-card-content>
-            <form class="example-form">
-                <table class="example-full-width" cellspacing="0">
-                    <tr>
-                        <td>
-                            <mat-form-field class="example-full-width">
-                                <input matInput placeholder="Url" [(ngModel)]="url" name="url" required>
-                            </mat-form-field>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <mat-form-field class="example-full-width">
-                                <input matInput placeholder="Port" [(ngModel)]="port" type="port"
-                                    name="port" required>
-                            </mat-form-field>
-                        </td>
-                    </tr>
-                </table>
-            </form>
-            <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
-        </mat-card-content>
-        <mat-card-actions>
-            <button class="submit-button" mat-raised-button (click)="changeBackUrl()" color="primary">Changer l'url</button>
-        </mat-card-actions>
-    </mat-card>
-</div>
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+
+    <mat-form-field appearance="fill" class="form-field">
+        <mat-label for="url">
+            URL du serveur
+        </mat-label>
+        <input matInput id="url" type="text" formControlName="url">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill" class="form-field">
+        <mat-label for="port">
+            Port du serveur
+        </mat-label>
+        <input matInput id="port" type="text" formControlName="port">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill" class="form-field">
+        <mat-label for="firstScenarioId">
+            Identifiant du premier scenario
+        </mat-label>
+        <input matInput id="firstScenarioId" type="text" formControlName="firstScenarioId">
+    </mat-form-field>
+    <br>
+    <button mat-raised-button color="primary" class="button" type="submit">OK !</button>
+
+</form>

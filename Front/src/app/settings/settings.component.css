@@ -4,15 +4,6 @@
   margin-top: 40px;
 }
 
-.container {
-  margin: auto;
-}
-
-.example-card {
-  min-width: 400px;
-}
-
-.submit-button {
-  display: block;
-  margin: auto !important;
+.form-field {
+  width: 100%;
 }
