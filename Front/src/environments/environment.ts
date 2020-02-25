@@ -3,9 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  apiUrl: "https://harrypotterapiisima.azurewebsites.net",
-  firstScenarioId: 1
+  production: false
 };
 
 /*

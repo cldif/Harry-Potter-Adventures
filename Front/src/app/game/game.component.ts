@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 
-import { environment } from "../../environments/environment";
+import { SettingsService } from "../services/settings.service";
 import { RestErrorComponent } from "./rest-error/rest-error.component";
 
 import { MatDialog } from "@angular/material/dialog";
@@ -15,7 +15,11 @@ export class GameComponent implements OnInit {
   scenarioHistory = [];
   lastScenario;
 
-  constructor(private http: HttpClient, public dialog: MatDialog) {}
+  constructor(
+    private http: HttpClient,
+    public dialog: MatDialog,
+    private settingsService: SettingsService
+  ) {}
 
   openDialog(): void {
     const dialogRef = this.dialog.open(RestErrorComponent, {
@@ -25,7 +29,13 @@ export class GameComponent implements OnInit {
 
   fetchScenario(id: number) {
     return this.http
-      .get(environment.apiUrl + "/api/Scenario/" + id)
+      .get(
+        this.settingsService.getServerURL() +
+          ":" +
+          this.settingsService.getServerPort() +
+          "/api/Scenario/" +
+          id
+      )
       .toPromise();
   }
 
@@ -44,6 +54,6 @@ export class GameComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.updateComponent(environment.firstScenarioId);
+    this.updateComponent(this.settingsService.getFirstScenario());
   }
 }

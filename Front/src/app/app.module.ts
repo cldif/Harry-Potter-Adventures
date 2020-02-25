@@ -15,7 +15,7 @@ import { MatButtonModule } from "@angular/material";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatListModule } from "@angular/material/list";
 import { MatDialogModule } from "@angular/material/dialog";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatFormFieldModule } from "@angular/material";
 import { MatInputModule } from "@angular/material";
 import { MatRippleModule } from "@angular/material";
@@ -57,6 +57,7 @@ import { HomeComponent } from "./home/home.component";
     LayoutModule,
     MatDialogModule,
     FormsModule,
+    ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
     MatRippleModule,
