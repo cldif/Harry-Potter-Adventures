@@ -40,7 +40,7 @@ namespace Isima.API.Controllers
             return Ok(scenario);
         }
 
-        /*/// <summary>
+        /// <summary>
         /// Get a list of scenarios
         /// </summary>
         /// <remarks>
@@ -53,7 +53,7 @@ namespace Isima.API.Controllers
         {
             List<ScenarioDto> scenarios = _scenarioService.GetAllScenario();
             return Ok(scenarios);
-        }*/
+        }
 
         //public IHttpActionResult Get(int id)
         //{
