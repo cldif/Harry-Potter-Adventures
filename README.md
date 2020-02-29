@@ -30,8 +30,7 @@ Contains the Data Access Layer
 Contains the DTO for each class (Scenario and Choice)
 
 ##### Isima.Tools
-Contains some tools : 
-`Extensions.cs` contains some useful functions
+Contains some useful functions in the `Extensions.cs` file :
 - ToEntity create an entity from a Dto Element
 - ToDto create a Dto element from an entity
 
