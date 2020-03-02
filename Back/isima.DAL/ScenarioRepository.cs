@@ -78,13 +78,13 @@ namespace Isima.DAL
             return scenarioCreated.ToDto(scenario.Choices);
         }
 
-        /*public void DeleteAllScenario()
+        public void DeleteScenario(int id)
         {
             try
             {
                 //Get all scenario data line from database 
                 List<Scenario> scenarioEntities = _dbcontext.Scenario.ToList();
-                _dbcontext.Scenario.RemoveRange(scenarioEntities);
+                _dbcontext.Scenario.Remove(scenarioEntities.Find(x => x.Id == id));
                 _dbcontext.SaveChanges();
             }
             catch (Exception e)
@@ -92,7 +92,7 @@ namespace Isima.DAL
                 Console.WriteLine(e.Message);
                 throw;
             }
-        }*/
+        }
 
         public void Dispose()
         {

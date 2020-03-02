@@ -17,5 +17,19 @@ namespace Isima.Business
                 return _choiceRepo.AddChoice(choice);
             }
         }
+        public void DeleteChoice(int id)
+        {
+            using (ChoiceRepository _choiceRepo = new ChoiceRepository())
+            {
+                _choiceRepo.DeleteChoice(id);
+            }
+        }
+        public List<ChoiceDto> GetAllChoices()
+        {
+            using (ChoiceRepository _choiceRepo = new ChoiceRepository())
+            {
+                return _choiceRepo.GetAllChoices();
+            }
+        }
     }
 }

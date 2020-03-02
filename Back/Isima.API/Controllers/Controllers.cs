@@ -98,6 +98,28 @@ namespace Isima.API.Controllers
             }
         }
 
+        /// <summary>
+        /// Delete the specified scenario.
+        /// </summary>
+        /// <param name="scenario">The scenario.</param>
+        /// <response code="200"> Deleted</response>
+        /// <response code="400"> parameter issue</response>
+        /// <response code="500">Other issues, see message included</response>
+        public IHttpActionResult Delete(int id)
+        {
+            try
+            {
+                _scenarioService.DeleteScenario(id);
+
+                return Ok("deleted");
+            }
+            catch (Exception e)
+            {
+                return InternalServerError(e);
+            }
+        }
+
+
     }
 
     /// <summary>
@@ -119,7 +141,7 @@ namespace Isima.API.Controllers
         /// <summary>
         /// Posts the choice
         /// </summary>
-        /// <param name="scenario">The choice.</param>
+        /// <param name="choice">The choice.</param>
         /// <response code="200"> Created</response>
         /// <response code="400"> parameter issue</response>
         /// <response code="500">Other issues, see message included</response>
@@ -147,6 +169,42 @@ namespace Isima.API.Controllers
             {
                 return InternalServerError(e);
             }
+        }
+
+        /// <summary>
+        /// Delete the specified choice.
+        /// </summary>
+        /// <param name="choice">The choice.</param>
+        /// <response code="200"> Deleted</response>
+        /// <response code="400"> parameter issue</response>
+        /// <response code="500">Other issues, see message included</response>
+        public IHttpActionResult Delete(int id)
+        {
+            try
+            {
+                _choiceService.DeleteChoice(id);
+
+                return Ok("deleted");
+            }
+            catch (Exception e)
+            {
+                return InternalServerError(e);
+            }
+        }
+
+        /// <summary>
+        /// Get a list of choices
+        /// </summary>
+        /// <remarks>
+        /// Get a list of choices
+        /// </remarks>
+        /// <returns></returns>
+        /// <response code="200">A choice</response>
+        [ResponseType(typeof(IEnumerable<ChoiceDto>))]
+        public IHttpActionResult Get()
+        {
+            List<ChoiceDto> choices = _choiceService.GetAllChoices();
+            return Ok(choices);
         }
     }
 }

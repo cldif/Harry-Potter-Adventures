@@ -43,5 +43,44 @@ namespace isima.DAL
         {
             _dbcontext.Dispose();
         }
+
+        public List<ChoiceDto> GetAllChoices()
+        {
+            try
+            {
+                //Get all choice data line from database 
+                List<Choice> choiceEntities = _dbcontext.Choice.ToList();
+                //transform to DTO, and send to upper layer
+                return choiceEntities.Select(x => new ChoiceDto
+                {
+                    Id = x.Id,
+                    Text = x.Text,
+                    CurrentScenarioId = x.CurrentScenarioId,
+                    NextScenarioId = x.NextScenarioId
+                }).ToList();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                throw;
+            }
+        }
+
+        public void DeleteChoice(int id)
+        {
+            try
+            {
+                //Get all scenario data line from database 
+                List<Choice> choiceEntities = _dbcontext.Choice.ToList();
+                _dbcontext.Choice.Remove(choiceEntities.Find(x => x.Id == id));
+                _dbcontext.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                throw;
+            }
+        }
+
     }
 }

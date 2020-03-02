@@ -9,6 +9,13 @@ namespace Isima.DTO
     public class ChoiceDto
     {
         /// <summary>
+        /// the id scenario
+        /// </summary>
+        /// <value>
+        /// the id scenario
+        /// </value>
+        public int Id { get; set; }
+        /// <summary>
         /// the curet id scenario
         /// </summary>
         /// <value>
