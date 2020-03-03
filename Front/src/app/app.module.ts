@@ -20,6 +20,7 @@ import { MatFormFieldModule } from "@angular/material";
 import { MatInputModule } from "@angular/material";
 import { MatRippleModule } from "@angular/material";
 import { MatProgressSpinnerModule } from "@angular/material";
+import { MatSidenavModule } from "@angular/material";
 
 import { AppComponent } from "./app.component";
 import { GameComponent } from "./game/game.component";
@@ -61,7 +62,8 @@ import { HomeComponent } from "./home/home.component";
     MatFormFieldModule,
     MatInputModule,
     MatRippleModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatSidenavModule
   ],
   entryComponents: [RestErrorComponent],
   providers: [],
