@@ -1,1 +1,123 @@
-<p>admin works!</p>
+<mat-sidenav-container class="tp-container">
+    <mat-sidenav mode="side" opened>
+        <section class="tp-section">
+            <button (click)="updateComponent('scenarioModification')">Créer un
+                scénario</button>
+        </section>
+        <br>
+        <br>
+
+        <section class="tp-section">
+            <button (click)="updateComponent('choiceAddition')">Créer un
+                choix pour un scénario</button>
+        </section>
+        <br>
+        <br>
+
+        <section class="tp-section">
+            <button (click)="updateComponent('scenarioDeletion')">Supprimer un
+                scénario</button>
+        </section>
+        <br>
+        <br>
+
+        <section class="tp-section">
+            <button (click)="updateComponent('choiceDeletion')">Supprimer un choix de scénario</button>
+        </section>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <div class="form-container" *ngIf="contentType ==='scenarioModification'">
+            <form [formGroup]="scenarioModifForm" (ngSubmit)="submitScenarioModification(scenarioModifForm.value)">
+                <mat-form-field appearance="fill" class="form-field">
+                    <mat-label for="Label">
+                        Label
+                    </mat-label>
+                    <input matInput id="Label" type="text" formControlName="Label">
+                </mat-form-field>
+                <br>
+
+                <mat-form-field appearance="fill" class="form-field">
+                    <mat-label for="Text">
+                        Description
+                    </mat-label>
+                    <input matInput id="Text" type="text" formControlName="Text">
+                </mat-form-field>
+                <br>
+
+                <mat-form-field appearance="fill" class="form-field">
+                    <mat-label for="GameOver">Type de scénario</mat-label>
+                    <select matNativeControl id="GameOver" type="type" formControlName="GameOver" required>
+                        <option value="0">Scénario standard</option>
+                        <option value="1">Scénario gagnant</option>
+                        <option value="2">Scénario perdant</option>
+                    </select>
+                </mat-form-field>
+                <br>
+
+                <button mat-raised-button color="primary" class="button" type="submit">OK !</button>
+
+            </form>
+        </div>
+
+        <div class="form-container" *ngIf="contentType ==='scenarioDeletion'">
+            <form [formGroup]="scenarioDelForm" (ngSubmit)="submitScenarioDeletion(scenarioDelForm.value)">
+                <mat-form-field appearance="fill" class="form-field">
+                    <mat-label for="Id">
+                        Identifiant du scénario à supprimer
+                    </mat-label>
+                    <input matInput id="Id" type="text" formControlName="Id">
+                </mat-form-field>
+                <br>
+
+                <button mat-raised-button color="warn" class="button" type="submit">SUPPRIMER !</button>
+
+            </form>
+        </div>
+
+        <div class="form-container" *ngIf="contentType ==='choiceAddition'">
+            <form [formGroup]="choiceAddForm" (ngSubmit)="submitChoiceAddition(choiceAddForm.value)">
+                <mat-form-field appearance="fill" class="form-field">
+                    <mat-label for="CurrentScenarioId">
+                        Identifiant du scénario parent
+                    </mat-label>
+                    <input matInput id="CurrentScenarioId" type="text" formControlName="CurrentScenarioId">
+                </mat-form-field>
+                <br>
+
+                <mat-form-field appearance="fill" class="form-field">
+                    <mat-label for="NextScenarioId">
+                        Identifiant du scénario relatif au choix
+                    </mat-label>
+                    <input matInput id="NextScenarioId" type="text" formControlName="NextScenarioId">
+                </mat-form-field>
+                <br>
+
+                <mat-form-field appearance="fill" class="form-field">
+                    <mat-label for="Text">
+                        Description du choix
+                    </mat-label>
+                    <input matInput id="Text" type="text" formControlName="Text">
+                </mat-form-field>
+                <br>
+
+                <button mat-raised-button color="primary" class="button" type="submit">OK !</button>
+
+            </form>
+        </div>
+
+        <div class="form-container" *ngIf="contentType ==='choiceDeletion'">
+            <form [formGroup]="choiceDelForm" (ngSubmit)="submitChoiceDeletion(choiceDelForm.value)">
+                <mat-form-field appearance="fill" class="form-field">
+                    <mat-label for="Id">
+                        Identifiant du choix à supprimer
+                    </mat-label>
+                    <input matInput id="Id" type="text" formControlName="Id">
+                </mat-form-field>
+                <br>
+
+                <button mat-raised-button color="warn" class="button" type="submit">SUPPRIMER !</button>
+            </form>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
