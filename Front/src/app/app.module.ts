@@ -21,6 +21,7 @@ import { MatInputModule } from "@angular/material";
 import { MatRippleModule } from "@angular/material";
 import { MatProgressSpinnerModule } from "@angular/material";
 import { MatSidenavModule } from "@angular/material";
+import { MatSelectModule } from "@angular/material/select";
 
 import { AppComponent } from "./app.component";
 import { GameComponent } from "./game/game.component";
@@ -63,7 +64,8 @@ import { HomeComponent } from "./home/home.component";
     MatInputModule,
     MatRippleModule,
     MatProgressSpinnerModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatSelectModule
   ],
   entryComponents: [RestErrorComponent],
   providers: [],

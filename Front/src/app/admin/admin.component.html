@@ -63,10 +63,11 @@
         <div class="form-container" *ngIf="contentType ==='scenarioDeletion'">
             <form [formGroup]="scenarioDelForm" (ngSubmit)="submitScenarioDeletion(scenarioDelForm.value)">
                 <mat-form-field appearance="fill" class="form-field">
-                    <mat-label for="Id">
-                        Identifiant du scénario à supprimer
-                    </mat-label>
-                    <input matInput id="Id" type="text" formControlName="Id">
+                    <mat-select placeholder="Scénario à supprimer" formControlName="Id">
+                        <mat-option *ngFor="let scenario of scenariosArray" [value]="scenario.Id">
+                            {{ scenario.Label }}<span class="tooltip"> ----> {{scenario.Text}}</span>
+                        </mat-option>
+                    </mat-select>
                 </mat-form-field>
                 <br>
 
@@ -78,18 +79,20 @@
         <div class="form-container" *ngIf="contentType ==='choiceAddition'">
             <form [formGroup]="choiceAddForm" (ngSubmit)="submitChoiceAddition(choiceAddForm.value)">
                 <mat-form-field appearance="fill" class="form-field">
-                    <mat-label for="CurrentScenarioId">
-                        Identifiant du scénario parent
-                    </mat-label>
-                    <input matInput id="CurrentScenarioId" type="text" formControlName="CurrentScenarioId">
+                    <mat-select placeholder="Scénario parent" formControlName="CurrentScenarioId">
+                        <mat-option *ngFor="let scenario of scenariosArray" [value]="scenario.Id">
+                            {{ scenario.Label }}<span class="tooltip"> ----> {{scenario.Text}}</span>
+                        </mat-option>
+                    </mat-select>
                 </mat-form-field>
                 <br>
 
                 <mat-form-field appearance="fill" class="form-field">
-                    <mat-label for="NextScenarioId">
-                        Identifiant du scénario relatif au choix
-                    </mat-label>
-                    <input matInput id="NextScenarioId" type="text" formControlName="NextScenarioId">
+                    <mat-select placeholder="Scénario résultant du choix" formControlName="NextScenarioId">
+                        <mat-option *ngFor="let scenario of scenariosArray" [value]="scenario.Id">
+                            {{ scenario.Label }}<span class="tooltip"> ----> {{scenario.Text}}</span>
+                        </mat-option>
+                    </mat-select>
                 </mat-form-field>
                 <br>
 
@@ -109,10 +112,11 @@
         <div class="form-container" *ngIf="contentType ==='choiceDeletion'">
             <form [formGroup]="choiceDelForm" (ngSubmit)="submitChoiceDeletion(choiceDelForm.value)">
                 <mat-form-field appearance="fill" class="form-field">
-                    <mat-label for="Id">
-                        Identifiant du choix à supprimer
-                    </mat-label>
-                    <input matInput id="Id" type="text" formControlName="Id">
+                    <mat-select placeholder="Choix à supprimer" formControlName="Id">
+                        <mat-option *ngFor="let choice of choicesArray" [value]="choice.Id">
+                            {{choice.Text}}
+                        </mat-option>
+                    </mat-select>
                 </mat-form-field>
                 <br>
 
