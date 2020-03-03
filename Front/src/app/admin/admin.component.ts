@@ -4,8 +4,9 @@ import { HttpHeaders } from "@angular/common/http";
 import { FormBuilder } from "@angular/forms";
 
 import { SettingsService } from "../services/settings.service";
+import { LogBarComponent } from "../log-bar/log-bar.component";
 
-import { MatDialog } from "@angular/material/dialog";
+import { MatSnackBar } from "@angular/material/snack-bar";
 
 @Component({
   selector: "app-admin",
@@ -25,7 +26,7 @@ export class AdminComponent implements OnInit {
 
   constructor(
     private http: HttpClient,
-    public dialog: MatDialog,
+    private snackBar: MatSnackBar,
     private formBuilder: FormBuilder,
     private settingsService: SettingsService
   ) {
@@ -53,6 +54,12 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
     this.refreshScenariosArray();
     this.refreshChoicesArray();
+  }
+
+  openLogBar() {
+    this.snackBar.openFromComponent(LogBarComponent, {
+      duration: 3000
+    });
   }
 
   updateComponent(value) {
@@ -96,7 +103,7 @@ export class AdminComponent implements OnInit {
     try {
       const result = await this.prepareScenarioModification(data);
       console.log(result);
-      console.log("Modifications prises en compte !", data);
+      console.log("Le scénario a bien été ajouté !", data);
     } catch (error) {
       console.error(error);
     }
@@ -104,6 +111,7 @@ export class AdminComponent implements OnInit {
 
   submitScenarioModification(formData) {
     this.sendScenarioModification(formData);
+    this.openLogBar();
   }
 
   prepareScenarioDeletion(data) {
@@ -132,6 +140,7 @@ export class AdminComponent implements OnInit {
 
   submitScenarioDeletion(formData) {
     this.sendScenarioDeletion(formData);
+    this.openLogBar();
   }
 
   prepareChoiceAddition(data) {
@@ -157,6 +166,7 @@ export class AdminComponent implements OnInit {
 
   submitChoiceAddition(formData) {
     this.sendChoiceAddition(formData);
+    this.openLogBar();
   }
 
   prepareChoiceDeletion(data) {
@@ -185,5 +195,6 @@ export class AdminComponent implements OnInit {
 
   submitChoiceDeletion(formData) {
     this.sendChoiceDeletion(formData);
+    this.openLogBar();
   }
 }

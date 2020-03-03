@@ -15,6 +15,7 @@ import { MatButtonModule } from "@angular/material";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatListModule } from "@angular/material/list";
 import { MatDialogModule } from "@angular/material/dialog";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatFormFieldModule } from "@angular/material";
 import { MatInputModule } from "@angular/material";
@@ -26,6 +27,7 @@ import { MatSelectModule } from "@angular/material/select";
 import { AppComponent } from "./app.component";
 import { GameComponent } from "./game/game.component";
 import { RestErrorComponent } from "./game/rest-error/rest-error.component";
+import { LogBarComponent } from "./log-bar/log-bar.component";
 import { SettingsComponent } from "./settings/settings.component";
 import { AdminComponent } from "./admin/admin.component";
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
@@ -41,7 +43,8 @@ import { HomeComponent } from "./home/home.component";
     AdminComponent,
     PageNotFoundComponent,
     HomeComponent,
-    RestErrorComponent
+    RestErrorComponent,
+    LogBarComponent
   ],
   imports: [
     BrowserModule,
@@ -58,6 +61,7 @@ import { HomeComponent } from "./home/home.component";
     MatListModule,
     LayoutModule,
     MatDialogModule,
+    MatSnackBarModule,
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
@@ -67,7 +71,7 @@ import { HomeComponent } from "./home/home.component";
     MatSidenavModule,
     MatSelectModule
   ],
-  entryComponents: [RestErrorComponent],
+  entryComponents: [RestErrorComponent, LogBarComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
