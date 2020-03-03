@@ -35,4 +35,8 @@ export class SettingsService {
   getFirstScenario() {
     return this.settings.firstScenarioId;
   }
+
+  getFullURL() {
+    return this.getServerURL() + ":" + this.getServerPort();
+  }
 }

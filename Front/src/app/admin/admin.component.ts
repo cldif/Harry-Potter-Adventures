@@ -14,7 +14,10 @@ import { MatDialog } from "@angular/material/dialog";
 })
 export class AdminComponent implements OnInit {
   contentType = "scenarioModification";
-  choices = [];
+
+  choicesArray;
+  scenariosArray;
+
   scenarioModifForm;
   scenarioDelForm;
   choiceAddForm;
@@ -47,10 +50,35 @@ export class AdminComponent implements OnInit {
     });
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.refreshScenariosArray();
+    this.refreshChoicesArray();
+  }
 
   updateComponent(value) {
     this.contentType = value;
+    this.refreshScenariosArray();
+    this.refreshChoicesArray();
+  }
+
+  async refreshScenariosArray() {
+    try {
+      this.scenariosArray = await this.http
+        .get(this.settingsService.getFullURL() + "/api/Scenario/")
+        .toPromise();
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  async refreshChoicesArray() {
+    try {
+      this.choicesArray = await this.http
+        .get(this.settingsService.getFullURL() + "/api/Choice/")
+        .toPromise();
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   prepareScenarioModification(data) {
@@ -60,11 +88,7 @@ export class AdminComponent implements OnInit {
     const options = { headers: headers, method: "POST" };
 
     return this.http
-      .post(
-        this.settingsService.getServerURL() + "/api/Scenario/",
-        data,
-        options
-      )
+      .post(this.settingsService.getFullURL() + "/api/Scenario/", data, options)
       .toPromise();
   }
 
@@ -90,7 +114,7 @@ export class AdminComponent implements OnInit {
 
     return this.http
       .delete(
-        this.settingsService.getServerURL() + "/api/Scenario/" + data.Id,
+        this.settingsService.getFullURL() + "/api/Scenario/" + data.Id,
         options
       )
       .toPromise();
@@ -117,7 +141,7 @@ export class AdminComponent implements OnInit {
     const options = { headers: headers, method: "POST" };
 
     return this.http
-      .post(this.settingsService.getServerURL() + "/api/Choice", data, options)
+      .post(this.settingsService.getFullURL() + "/api/Choice", data, options)
       .toPromise();
   }
 
@@ -143,7 +167,7 @@ export class AdminComponent implements OnInit {
 
     return this.http
       .delete(
-        this.settingsService.getServerURL() + "/api/Choice/" + data.Id,
+        this.settingsService.getFullURL() + "/api/Choice/" + data.Id,
         options
       )
       .toPromise();

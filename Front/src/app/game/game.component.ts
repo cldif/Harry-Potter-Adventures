@@ -29,13 +29,7 @@ export class GameComponent implements OnInit {
 
   fetchScenario(id: number) {
     return this.http
-      .get(
-        this.settingsService.getServerURL() +
-          ":" +
-          this.settingsService.getServerPort() +
-          "/api/Scenario/" +
-          id
-      )
+      .get(this.settingsService.getFullURL() + "/api/Scenario/" + id)
       .toPromise();
   }
 
